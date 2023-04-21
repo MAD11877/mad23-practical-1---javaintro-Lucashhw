@@ -9,8 +9,12 @@ public class Question2
      * 
      * Hint: in.nextDouble() to read double
      */
-     
-    Scanner in = new Scanner(System.in);
-    double height = in.nextDouble();
+    let weight = prompt("Enter your weight in kilograms: ");
+    let height = prompt("Enter your height in meters: ");
+
+    let bmi = weight / (height * height);
+
+    console.log("Your BMI is: " + bmi.toFixed(2));
+
   }
 }
