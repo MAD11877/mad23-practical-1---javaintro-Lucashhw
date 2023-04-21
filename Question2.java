@@ -9,20 +9,12 @@ public class Question2
      * 
      * Hint: in.nextDouble() to read double
      */
-    let height = prompt("Enter your height in meters:");
-    let weight = prompt("Enter your weight in kilograms:");
-
-
-    height = parseFloat(height);
-    weight = parseFloat(weight);
-
+    let weight = prompt("Enter your weight in kilograms: ");
+    let height = prompt("Enter your height in meters: ");
 
     let bmi = weight / (height * height);
 
+    console.log("Your BMI is: " + bmi.toFixed(2));
 
-    console.log("Your BMI is: " + bmi);
-     
-    Scanner in = new Scanner(System.in);
-    double height = in.nextDouble();
   }
 }
